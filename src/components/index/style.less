@@ -1,0 +1,242 @@
+@images: '../images'; // 指定当前
+@import '~style/helpers';
+
+.container{
+    width:100%;
+    height:100%;
+    position: relative;
+    background:#fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    .headLocation{
+        width:100%;
+        height:40px;
+        position: relative;
+        padding-left:40px;
+        line-height: 40px;
+        font-size:16px;
+        color:#333;
+        .icon1{
+            position: absolute;
+            left:10px;
+            top:50%;
+            transform: translateY(-50%);
+            width:30px;
+            height:30px;
+            // background:url('@{images}/icon1.svg') no-repeat center center;
+            background-size:70%;
+        }
+    }
+    .bottomDiv{
+        width:100%;
+        height:5px;
+        border-bottom:1px solid #eee;
+    }
+    .bannerWrap{
+        width:100%;
+        height:260px;
+        padding:10px 20px;
+        .topBanner{
+            width:100%;
+            height:50%;
+            // background: url('@{images}/indexBanner.png') no-repeat center center;
+            background-size:contain;
+        }
+        .bottomBanner{
+            width:100%;
+            height:50%;
+            // background:url('@{images}/banner1.png') no-repeat center center;
+            background-size:contain;
+        }
+        .bottomMessage{
+            width:100%;
+            height:50%;
+            position: relative;
+            .leftImg{
+                width:90px;
+                // background:url('@{images}/banner2.svg') no-repeat center center ;
+                background-size:cover;
+                height:90px;
+                position: absolute;
+                left:0;
+                top:50%;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+            .rightContent{
+                width:100%;
+                height:100%;
+                position: absolute;
+                left:0;
+                top:0;
+                padding: 10px 0 10px 90px;
+                p{
+                    width:100%;
+                    height:15px;
+                    line-height:15px;
+                    background:#feebc1;
+                    font-size:12px;
+                    margin-top:10px;
+                    color:#f84900;
+                    margin:0;
+                    padding-left:20px;
+                }
+                .fontWrap{
+                    width:100%;
+                    height:30px;
+                    line-height: 30px;
+                    color:#333;
+                    span.color1{
+                        color:#999;
+                    }
+                    span.color2{
+                        color:#f84900;
+                    }
+                }
+            }
+        }
+    }
+    .productList{
+        width:100%;
+        position: relative;
+        float:left;
+        margin-bottom:10px;
+        .itemProduct{
+            width:100%;
+            position: relative;
+            .title{
+                width:100%;
+                height:60px;
+                padding-left:80px;
+                // background:#fda168 url('@{images}/logo1.png') no-repeat 20px center;
+				position: relative;
+				background-size: 10%;
+                .leftName{
+                    font-size:20px;
+                    position: absolute;
+                    left:90px;
+                    top:50%;
+                    transform: translateY(-50%);
+                    color:#fff;
+                }
+                .rightBtn{
+                    width:80px;
+                    font-size:14px;
+                    color:#fff;
+                    position: absolute;
+                    right:10px;
+                    top:50%;
+                    transform: translateY(-50%);
+                    span{
+                        position: absolute;
+                        top:50%;
+                        transform: translateY(-50%);
+                        width:15px;
+                        height:15px;
+                        right:0;
+                        z-index: 1;
+                        // background:url('@{images}/right.svg') no-repeat right center;
+                    }
+                }
+            }
+            .list{
+                width:100%;
+                position: relative;
+                float:left;
+                .item:nth-child(1){
+                    border-right:1px solid #ddd;
+                    border-bottom:1px solid #ddd;
+                }
+                .item:nth-child(2){
+                    border-right:1px solid #ddd;
+                    border-bottom:1px solid #ddd;
+                }
+                .item:nth-child(3){
+                    border-bottom:1px solid #ddd;
+                }
+                .item:nth-child(4){
+                    border-right:1px solid #ddd;
+                    border-bottom:1px solid #ddd;
+                }
+                .item:nth-child(5){
+                    border-right:1px solid #ddd;
+                    border-bottom:1px solid #ddd;
+                }
+                .item:nth-child(6){
+                    border-bottom:1px solid #ddd;
+                }
+                .item{
+                    width:33.3333%;
+                    float:left;
+                    height:150px;
+                    position:relative;
+                    .topImg{
+                        width:100%;
+                        height:70px;
+                        position: relative;
+                        img{
+                            height:100%;
+                            position: absolute;
+                            left:50%;
+                            transform: translate(-50%);
+                            top:0;
+                        }
+                    }
+                    .bottomContent{
+                        width:100%;
+                        height:80px;
+                        padding:0 10px 10px;
+                        .name{
+                            width:100%;
+                            height:30px;
+                            line-height:30px;
+                            font-size:14px;
+                            color:#333;
+                        }
+                        .buyBtn{
+                            width:100%;
+                            height:50px;
+                            line-height: 50px;
+                            position: relative;
+                            .leftPrice{
+                                width:73%;
+                                overflow: hidden;
+                                text-overflow:ellipsis;
+                                white-space: nowrap;
+                                height:100%;
+                                position: absolute;
+                                left:0;
+                                top:0;
+                                color:#999;
+                                span{
+                                    color:#b83338;
+                                }
+                            }
+                            .rightBtn{
+                                width:30%;
+                                height:100%;
+                                position: absolute;
+                                right:0;
+                                top:0;
+                                z-index: 1;
+                                span{
+                                    position:absolute;
+                                    width:20px;
+                                    height:20px;
+                                    // background:url('@{images}/plus2.svg') no-repeat center center;
+                                    left:50%;
+                                    top:50%;
+                                    background-size:200%;
+                                    transform: translate(-50%,-50%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.IOSpadding{
+	.csjIOSpadding;
+}

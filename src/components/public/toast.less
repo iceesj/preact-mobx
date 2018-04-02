@@ -1,0 +1,99 @@
+.toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  z-index: 2000;
+  &>span {
+    display: inline-block;
+    position: absolute;
+    padding: 1em;
+    box-sizing: content-box;
+    border-radius: 3px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.75);
+  }
+}
+.auiDialog {
+  position: fixed;
+  z-index: 111;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #FAFAFC;
+  text-align: center;
+  border-radius: 0.3rem;
+}
+.auiDialogHeader {
+  padding: 10px 15px 0;
+  text-align: center;
+  font-size: 0.5rem;
+}
+.auiDialogBody {
+  padding: 1.5rem 0.75rem 1.25rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  color: #888;
+  text-align: left;
+  text-indent: 2em;
+  word-wrap: break-word;
+}
+.auiDialogFooter {
+  position: relative;
+  font-size: 0.7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.auiDialogBtn {
+  position: relative;
+  text-align: center;
+  padding: 15px 0;
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.auiDialogBtn:after {
+  border-left: 1rpx solid #dbdbdb;
+  border-top: 1rpx solid #dbdbdb;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: scale(1);
+  pointer-events: none;
+}
+.auiDialogBtn:first-child:after {
+  border-left: 0;
+}
+.auiTextInfo {
+  color: #666;
+}
+.auiTextDanger {
+  color: #e74c3c;
+}
+.auiMask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 110;
+}

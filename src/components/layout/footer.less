@@ -1,0 +1,118 @@
+@import '~style/helpers';
+@images: '../images'; // 指定当前
+.footer {
+    position: fixed;
+    width: 100%;
+    height: @footerHeight;
+    line-height: @footerHeight;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 10;
+    background: @footerBgc;
+    box-shadow: 0 0 2px #fff;
+    border-top:1px solid #cfcfcf;
+    /*no*/
+    &>div {
+        width: 33.333333%;
+        height: @footerHeight;
+        display: inline-block;
+        text-align: center;
+        color:#6d6d6d;
+        font-weight: 200;
+        line-height:75px;
+        position: relative;
+        .icon1{
+            width:30px;
+            height:30px;
+            // background:url('@{images}/footerIcon1.svg') no-repeat center center ;
+            position: absolute;
+            top:2px;
+            left:50%;
+            transform: translateX(-50%);
+            background-size:180%;
+        }
+        .icon1Active{
+            width:30px;
+            height:30px;
+            // background:url('@{images}/footerIcon1Active.svg') no-repeat center center ;
+            position: absolute;
+            top:2px;
+            left:50%;
+            transform: translateX(-50%);
+            background-size:180%;
+        }
+        .icon2{
+            width:30px;
+            height:30px;
+            // background:url('@{images}/footerIcon2.svg') no-repeat center center ;
+            position: absolute;
+            top:2px;
+            left:50%;
+            transform: translateX(-50%);
+            background-size:180%;
+        }
+        .icon2Active{
+            width:30px;
+            height:30px;
+            // background:url('@{images}/footerIcon2Active.svg') no-repeat center center ;
+            position: absolute;
+            top:2px;
+            left:50%;
+            transform: translateX(-50%);
+            background-size:180%;
+		}
+		.cartNum{
+			background: #B3282C;
+			padding: 0 0.2rem;
+			height: 0.8rem;
+			line-height: 0.8rem;
+			position: absolute;
+			top: 10%;
+			left: 60%;
+			transform: translateX(-50%);
+			border-radius: 0.4rem;
+			color: #fff;
+		}
+        .icon3{
+            width:30px;
+            height:30px;
+            // background:url('@{images}/footerIcon3.svg') no-repeat center center ;
+            position: absolute;
+            top:2px;
+            left:50%;
+            transform: translateX(-50%);
+            background-size:180%;
+        }
+        .icon3Active{
+            width:30px;
+            height:30px;
+            // background:url('@{images}/footerIcon3Active.svg') no-repeat center center ;
+            position: absolute;
+            top:2px;
+            left:50%;
+            transform: translateX(-50%);
+            background-size:180%;
+        }
+    }
+}
+.subMenuLayer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.innerMenu {
+	position: absolute;
+	bottom: @footerHeight;
+	width: 60%;
+	height: 4rem;
+	left: 20%;
+	text-align: center;
+	&>div {
+		display: inline-block;
+		width: 50%;
+		height: 2rem;
+		line-height: 2rem;
+		background: #09f;
+	}
+}

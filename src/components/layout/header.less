@@ -1,0 +1,34 @@
+@images: '../images'; // 指定当前
+@import '~style/helpers';
+.header{
+    width:100%;
+    height:@headerHeight;
+    position: absolute;
+    left:0;
+    top:0;
+    border-bottom:1px solid #ddd;
+    background:#fff;
+    .title{
+        width:100%;
+        position: absolute;
+        left:0;
+        top:0;
+        height:@headerHeight;
+        line-height: @headerHeight;
+        text-align: center;
+        font-size:16px;
+    }
+    .leftBack{
+        width:25px;
+        height:25px;
+        position: absolute;
+        left:10px;
+        top:50%;
+        transform: translateY(-50%);
+        // background:url('@{images}/left.svg') no-repeat center center ;
+        z-index: 1;
+    }
+}
+.headerPadding{
+	margin-top: 1.1rem;
+}
